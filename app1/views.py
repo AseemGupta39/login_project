@@ -14,7 +14,7 @@ def LoginPage(request):
         d1 = {1:username,2:pass1}
         print(d1)
         user = authenticate(request,username=username,password=pass1)
-        if user is None:
+        if user is not None:
             login(request,user)
             return redirect('home')
         else:

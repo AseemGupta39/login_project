@@ -55,7 +55,7 @@ ROOT_URLCONF = 'registration.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['//home//aseemg//Documents//login_dj//registration//templates'],
+        'DIRS': ['templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
