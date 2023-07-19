@@ -11,10 +11,11 @@ def LoginPage(request):
     if request.method == "POST":
         username = request.POST.get('username')
         pass1 = request.POST.get('pass')
-        d1 = {1:username,2:pass1}
-        print(d1)
+        # d1 = {1:username,2:pass1}
+        # print(d1)
         user = authenticate(request,username=username,password=pass1)
-        if user is None:
+        # print(user)
+        if user is not None:
             login(request,user)
             return redirect('home')
         else:
